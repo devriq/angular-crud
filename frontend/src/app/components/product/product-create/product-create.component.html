@@ -1,0 +1,29 @@
+<div class="container">
+    <span class="p-float-label">
+        <input id="float-input" type="text" [(ngModel)]="product.title" name="name" pInputText> 
+        <label for="float-input">Name</label>
+    </span>
+    <span class="p-float-label">
+        <input id="float-input" type="text" [ngModel]="product.price" name="price" pInputText> 
+        <label for="float-input">Price</label>
+    </span>
+    <span class="p-float-label">
+        <input id="float-input" type="text" [(ngModel)]="product.description" name="description" pInputText> 
+        <label for="float-input">Description</label>
+    </span>
+    <span class="p-float-label">
+        <input id="float-input" type="text" [(ngModel)]="product.image" name="image" pInputText> 
+        <label for="float-input">Url da Imagem</label>
+    </span>
+    <span class="p-float-label">
+        <p-dropdown [editable]="true" [options]="categories" [(ngModel)]="product.category" optionLabel="category" class=""></p-dropdown>
+        <label for="float-input">Category</label>
+    </span>
+
+    <span class="p-float-label actions">
+        <button routerLink="/products" class="p-button-secondary" label="Cancelar" iconPos="left" pButton></button>
+        <button  (click)="createProduct()" class="p-button-primary" label="Salvar" iconPos="left" pButton></button>
+    </span>
+    <p-toast></p-toast>
+
+</div>

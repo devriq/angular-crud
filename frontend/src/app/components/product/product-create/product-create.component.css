@@ -1,0 +1,15 @@
+.p-float-label {
+	margin-bottom: 2rem;
+	font-family: "Courier New", Courier, monospace;
+	width: 100%;
+	max-width: 300px;
+}
+#float-input {
+	width: 100%;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
